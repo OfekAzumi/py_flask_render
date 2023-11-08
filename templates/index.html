@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body onload="load_display()">
+    <div id="display">
+        <!-- display data -->
+    </div>
+    <script>
+        const My_Server = ''
+        const load_display = () => {
+            axios.get(MY_SERVER).then(res => display.innerHTML = res)
+        }
+    </script>
+</body>
+
+</html>
